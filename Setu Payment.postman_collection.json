@@ -1,0 +1,59 @@
+{
+  "info": {
+    "_postman_id": "9fe4d519-9303-4bc1-9f4b-364005941097",
+    "name": "Setu Payment",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54240414",
+    "_collection_link": "https://go.postman.co/collection/54240414-9fe4d519-9303-4bc1-9f4b-364005941097?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Create Event",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "All Transactions",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Transactions with filters",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Transaction by ID",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Reconciliation Summary",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Discrepancies",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}

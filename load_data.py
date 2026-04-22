@@ -1,7 +1,7 @@
 import json
 import requests
 
-URL = "http://127.0.0.1:8000/events"
+URL = "https://setu-app-67mr2yfzua-el.a.run.app/"
 
 with open("sample_events.json") as f:
     data = json.load(f)
