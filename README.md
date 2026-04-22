@@ -100,3 +100,9 @@
     - PostgreSQL + indexing
     - Kafka-based event ingestion
     - Authentication & rate limiting
+
+🔹 Video Walkthrough 
+
+    https://www.loom.com/share/aedb5da96c264b6db4abe73a567c9951
+
+   
