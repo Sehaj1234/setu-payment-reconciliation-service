@@ -4,6 +4,11 @@
 
     It supports reconciliation features such as summary aggregation and discrepancy detection to identify inconsistent transaction states.
 
+🔹 Deployment URL
+
+    Live URL: https://setu-app-67mr2yfzua-el.a.run.app/
+    Docs: https://setu-app-67mr2yfzua-el.a.run.app/docs
+
 🔹 Architecture Overview
 
     The system follows an event-driven model:
