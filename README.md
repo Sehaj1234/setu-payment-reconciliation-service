@@ -1,9 +1,11 @@
 🔹 Overview
+
     This service ingests payment events and maintains transaction state using an event-driven architecture.
 
     It supports reconciliation features such as summary aggregation and discrepancy detection to identify inconsistent transaction states.
 
 🔹 Architecture Overview
+
     The system follows an event-driven model:
 
     1. Events are ingested via API
@@ -17,6 +19,7 @@
     - SQLite → storage (Postgres-ready)
 
 🔹 Data Model
+
     Merchant
     - merchant_id
     - merchant_name
@@ -36,6 +39,7 @@
     - timestamp
 
 🔹 Setup Instructions
+
     git clone https://github.com/Sehaj1234/setu-payment-reconciliation-service.git
 
     cd setu-assignment
@@ -47,6 +51,7 @@
     uvicorn app.main:app --reload
 
 🔹 API Documentation
+
     POST /events
     - Ingest payment events
     - Idempotent via event_id
@@ -64,6 +69,7 @@
     - Detect inconsistent states
 
 🔹 Deployment
+
     Deployed using Cloud Run for serverless scalability and cost efficiency.
     
     Build:
@@ -73,16 +79,19 @@
     uvicorn app.main:app --host 0.0.0.0 --port 10000
 
 🔹 Assumptions
+
     - Events are source of truth
     - Latest timestamp defines transaction state
     - No authentication required for assignment
 
 🔹 Tradeoffs
+
     - SQLite used for simplicity (not scalable)
     - In-memory reconciliation logic (can be optimized via SQL aggregation)
     - No background processing (synchronous updates)
 
 🔹 Future Improvements
+
     - PostgreSQL + indexing
     - Kafka-based event ingestion
     - Authentication & rate limiting
